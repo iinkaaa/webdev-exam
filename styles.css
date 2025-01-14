@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+} /* футер */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    border: 1px solid #ddd;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+aside {
+    position: sticky;
+    top: 20px;
+}
+
+.card-img-top {
+    height: 150px;
+    line-height: 150px;
+    background-color: #f4f4f4;
+    color: #999;
+    font-size: 14px;
+}
+
+footer {
+    border-top: 1px solid #ddd;
+    flex-shrink: 0; /* футер */
+}
+
+main {
+    flex: 1; /* Заставляет контент занимать оставшееся пространство */
+}
